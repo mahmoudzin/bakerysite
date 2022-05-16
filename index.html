@@ -10,10 +10,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800;900&family=Alegreya:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="demo-panel-menu">
+        <!-- <div class="demo-panel-menu">
             <div class="demo-1">
                 <span>See Demo Sites</span>
                 <img src="images/mechanical-gears-.png" alt="">
@@ -24,11 +26,47 @@
                 <span>Buy Engage Now!</span>
             </div>
             
-        </div>
+        </div> -->
         <!-- navbar section -->
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/bakery-light-1.png" alt="logo">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+            <div class="container">
+              <a class="logo navbar-brand" href="#">
+                <img class="w-100" src="images/bakery-light-1.png" alt="logo" id="logo">
+              </a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse in" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  
+                <li class="nav-item fw-600">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                  <li class="nav-item fw-600">
+                    <a class="nav-link" href="#about">about</a>
+                  </li>
+                  <li class="nav-item fw-600">
+                    <a class="nav-link" href="#our">Our Offer</a>
+                  </li>
+                  <li class="nav-item fw-600">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item fw-600">
+                    <a class="nav-link" href="#blog">Blog</a>
+                  </li>
+                  <li class="nav-item fw-600">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+        <!-- <nav class="navbar">
+            <div class="">
+                
             </div>
             <div class="nav-close">
                <span></span>
@@ -40,12 +78,10 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#our">Our Offer</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    
                 </ul>
             </div>
-        </div>
+        </nav> -->
         <!-- Home SEction -->
         <div class="home" id="home">
             <div class="home-content">
@@ -68,7 +104,7 @@
             </a>
         </div>
         <!-- About Section -->
-        <div class="about container" id="about">
+        <!-- <div class="about container" id="about">
            <div class="flex-box">
                 <div class="section-img">
                 <img src="images/alexandru-stavrica-170390-800x760.jpg" alt="about section photo" />  
@@ -92,7 +128,7 @@
                 </div>
            </div>
         </div>
-         <!-- Our offer Section -->
+         <!-- Our offer Section --
          <div class="offer" id="our">
             <div class="container">
                 <div class="flex-box">
@@ -112,7 +148,7 @@
                            
             </div>
         </div>
-        <!-- Gallery Section -->
+        <!-- Gallery Section --
         <div class="gallery container" id="gallery">
             <h2 class="section-title">Our Baking</h2>
             <div class="flex-box">
@@ -139,7 +175,7 @@
                 </div>
             </div> 
         </div> 
-         <!-- Blog Section -->
+         <!-- Blog Section --
          <div class="blog" id="blog">
             <div class="container">
                 <div class="flex-box">
@@ -166,7 +202,7 @@
                 
             </div>
         </div>
-        <!-- Contact Section -->
+        <!-- Contact Section --
         <div class="contact" id="contact">
             <div class="container">
                 <div class="flex-box">
@@ -297,7 +333,7 @@
                 </div>
             </div>
         </div>
-        <!-- FOOTER SECTION -->
+        <!-- FOOTER SECTION --
         <div class="footer">
             <div class="footer-img">
               <img  src="images/bakery-light-1.png" alt="logo">
@@ -311,7 +347,8 @@
                 <li ><img src="images/linkedin.png" alt="scial icon"></li>
                 <li ><img src="images/twitter.png" alt="scial icon"></li>
             </ul>  
-            </div>
-        </div>
+            </div> -->
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
