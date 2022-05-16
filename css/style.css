@@ -2,7 +2,7 @@
 :root{
     /*COLORS*/
     --main-color: #8f754f;
-    --heading-color: #282828;
+    --heading-color: #303030;
     --color-gray: #666;
     --color-gray-2: #444;
     /* Fontweight */
@@ -12,7 +12,7 @@
     /* transition */
     --transition: all .5s ease;
     /*Font family*/
-    --custome-font: 'Poppins', sans-serif;
+    --custome-font: 'Alegreya', serif, monospace;
     --normal-font: 'Alegreya Sans',serif,monospace;;
 }
 body{
@@ -21,6 +21,18 @@ body{
 }
 ul{
     list-style: none;
+}
+.intil-background{
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--custome-font);
+}
+.bg-main{
+    background-color: var(--main-color) !important;
 }
 /* .container{
     width: 85%;
@@ -139,160 +151,35 @@ ul{
         left:0;
     }
 }
-/* /* .navbar{
-    background-color: rgba(0, 0, 0, .5);
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 5px 0;
-    z-index: 3;
-} 
-.navbar .logo{
-    width: 15%;
-}
-.navbar .logo img{
-    width: 100%;
-}
-.navbar .menu{
-    width: 50%;
-}
-.navbar ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    transition: .5 color
-}
-.navbar ul li a:hover{
-    color: #8e7754;;
-}
-.nav-close{
-    border: 1px solid #fff;
-    border-radius:3px;
-    padding:6px;
-    flex-direction: column;
-    justify-self: center;
-    cursor: pointer;
-    display:none
-}
-.nav-close span{
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin-bottom: 5px;
-}
-.nav-close span:last-child{
-    margin-bottom: 0;
-}
-/*MOBILE SCREEN
-@media screen and (max-width: 576px){
-    .menu{
-        width: 100% !important;
-    }
-}
-@media screen and (max-width: 767px){
-    .navbar .logo{
-        width: 140px;
-    }
-    .navbar .logo img{
-        width: 100%;
-    }
-    .menu{
-        position: fixed;
-        left: -100%;
-        width: 50%;
-        height: 100%;
-        transition: .7s left .5s;
-        background-color: rgba(0, 0, 0, .5);
-        top:53px;
-    }
-    .menu ul{
-        flex-direction: column;
-        height: 60%;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .nav-close{
-        display: flex;
-    }
-    .menu:hover{
-        left:0
-    }
-    .nav-close:hover ~ .menu{
-        left: 0;
-    }
-} */
 /*HOME SECTION */
 .home{
     background-image: url(../images/drew-coffman-1872.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    position: relative;
 }
-.home-content{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:center;
-    text-align: center;
-    height: 100%;
-}
+
 .home-content h1{
-    color: #fff;
-    font-family: 'Alegreya', serif, monospace;
-    font-size: 70px;
-    margin-bottom: 30px;
+    font-weight: var(--fw-600);
 }
 .home-content p{
-    color: #ccc;
-    font-size: 24px;
     line-height: 1.86em;
-    margin-bottom: 40px;
 }
-.home-buttons button{
+.home button{
     margin-right: 5px;
     padding: 15px 20px;
-    border-radius: 5px;
-    color: #fff;
     cursor: pointer;
-    transition: .3s;
+    transition: var(--transition);
 }
 .learn-more{
     border: none;
-    background-color: #8e7754;
 }
 .contact-us{
     border: 1px solid #fff;
-    background-color: transparent;
 }
 .learn-more:hover, 
 .contact-us:hover{
-    background-color: #fff;
-    color: #303030;
+    background-color: #fff !important;
+    color: var(--heading-color) !important;
 }
 
-/*HOME SECTION MEDIA QUERY*/
-@media screen and (max-width: 767px){
-    .home-content h1{
-        font-size:34px;
-    }
-    .home-content p{
-        font-size:22px
-    }
-    .home-content p:last-of-type{
-        font-size: 16px;
-    }
-}
 /*ABOUT SECTION*/
 .about ul{
     margin-top: 30px;
@@ -484,26 +371,15 @@ ul{
 /*Pointer Animations*/
 
 .pointer{
-    position: absolute;
     width: 30px;
     height: 50px;
     bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 1px solid #fff;
-    border-radius: 20px;
     cursor: pointer;
 }
 .pointer span{
     height: 8px;
     width: 8px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: block;
-    position: absolute;
     top: 1px;
-    transform: translateX(-50%);
-    left: 50%;
     animation-name: moveTobottom; 
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -512,18 +388,14 @@ ul{
 @keyframes moveTobottom {
     0%{
         opacity: 0;
-        top: 0;
+        top: 10%;
     }
-    25%{
-        opacity: 0;
-        top: 0;
-    }
-    75%{
+    50%{
         opacity: 1;
-        top: 10px;
+        top: 50%;
     }
     100%{
-        opacity: .5;
-        top: 20px;
+        opacity: 0;
+        top: 80%;
     }
 }
