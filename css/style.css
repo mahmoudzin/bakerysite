@@ -121,34 +121,6 @@ h1, h2, h3, h4, h5, h6{
     background-color: #fff !important;
     color: var(--heading-color) !important;
 }
-/* Gallery Section */
-.gallery-box{
-    width: calc(100% / 3 - 20px);
-    text-align: center;
-}
-.gallery-box img{
-    width: 100%;
-}
-.gallery-box h4{
-    margin: 15px 0;
-}
-.gallery .section-title{
-        margin-top:20px;
-        text-align: center;
-}
-@media screen and (max-width: 767px){
-    .gallery .flex-box div:first-of-type{
-        margin: 0
-    }
-    
-    .gallery .flex-box div{
-        margin-top: 30px;
-    }
-    .gallery-box{
-        width: 100%
-    }
-}
-
 /*BLOG SECTION*/
 .blog ul{
     margin-top: 30px;
