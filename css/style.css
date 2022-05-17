@@ -121,22 +121,11 @@ h1, h2, h3, h4, h5, h6{
     background-color: #fff !important;
     color: var(--heading-color) !important;
 }
-/*BLOG SECTION*/
-.blog ul{
-    margin-top: 30px;
-}
-.blog ul li{
-    display: flex;
-    align-items: center;
-    padding: 15px 0;
-}
-.blog .section-img iframe{
-    width: 100%;
-}
 /*CONTACT SECTION*/
-.contact{
+.bg-sec{
     background-color: #403d38;
 }
+/* 
 .contact .flex-box{
  align-items: flex-start;
 }
@@ -196,7 +185,7 @@ h1, h2, h3, h4, h5, h6{
     .contact .icon{
         width: 25px
     }
-}
+} */
 .footer{
     background-color:#353330;
     padding: 30px 0;
